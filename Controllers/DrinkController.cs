@@ -7,33 +7,35 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MenuApi.Controllers
 {
-    [Route("api/menu")]
-    public class MenuController : Controller
+    [Route("api/drink")]
+    public class DrinkController : Controller
     {
-        List<MenuItem> myMenu = new List<MenuItem>();
-        void makeMenu(){
+        List<Drink> myDrinks = new List<Drink>();
+        void makeDrinks(){
             //construct the menu
-            var Hamburger = new MenuItem("Jake Burger", 5.99f);
-            var Cheeseburger = new MenuItem("Mark Burger", 6.99f);
-            var VeganBurger = new MenuItem("Vail Burger", 10.99f);
-            myMenu.Add(Hamburger);
-            myMenu.Add(Cheeseburger);
-            myMenu.Add(VeganBurger);
+            var Lemonade = new Drink("Lemonade", 1.96f, false, 200);
+            var IceT = new Drink("Ice-T", 2.94f, false, 230);
+            var AmySpecial = new Drink("AmySpecial", 10.99f, true, 600);
+            myDrinks.Add(Lemonade);
+            myDrinks.Add(IceT);
+            myDrinks.Add(AmySpecial);
         }
 
+
+
         [HttpGet]
-        public List<MenuItem> Get()
+        public List<Drink> Get()
         {
-            makeMenu();
-            return myMenu;
+            makeDrinks();
+            return myDrinks;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public MenuItem Get(int id)
+        public Drink Get(int id)
         {
-            makeMenu();
-            return myMenu[id];
+            makeDrinks();
+            return myDrinks[id];
         }
 
         // POST api/values

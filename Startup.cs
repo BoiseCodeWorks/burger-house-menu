@@ -31,7 +31,7 @@ namespace MenuApi
     {
       // Add framework services.
       services.AddCors();
-      //services.AddDbContext<BurgerHouseContext>(builder =>  builder.UseSqlite("Data Source=menu.db"));
+      services.AddDbContext<BurgerHouseContext>(builder =>  builder.UseSqlite("Data Source=menu.db"));
       services.AddMvc();
     }
 

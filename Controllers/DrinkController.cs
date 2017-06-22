@@ -10,32 +10,28 @@ namespace MenuApi.Controllers
     [Route("api/drink")]
     public class DrinkController : Controller
     {
-        List<Drink> myDrinks = new List<Drink>();
-        void makeDrinks(){
-            //construct the menu
-            var Lemonade = new Drink("Lemonade", 1.96f, false, 200);
-            var IceT = new Drink("Ice-T", 2.94f, false, 230);
-            var AmySpecial = new Drink("AmySpecial", 10.99f, true, 600);
-            myDrinks.Add(Lemonade);
-            myDrinks.Add(IceT);
-            myDrinks.Add(AmySpecial);
-        }
+        // List<Drink> myDrinks = new List<Drink>();
+        // void makeDrinks(){
+        //     //construct the menu
+        //     var Lemonade = new Drink("Lemonade", 1.96f, false, 200);
+        //     var IceT = new Drink("Ice-T", 2.94f, false, 230);
+        //     var AmySpecial = new Drink("AmySpecial", 10.99f, true, 600);
+        //     myDrinks.Add(Lemonade);
+        //     myDrinks.Add(IceT);
+        //     myDrinks.Add(AmySpecial);
+        // }
 
 
 
         [HttpGet]
-        public List<Drink> Get()
+        public void Get()
         {
-            makeDrinks();
-            return myDrinks;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Drink Get(int id)
+        public void Get(int id)
         {
-            makeDrinks();
-            return myDrinks[id];
         }
 
         // POST api/values

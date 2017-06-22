@@ -10,32 +10,28 @@ namespace MenuApi.Controllers
     [Route("api/menu")]
     public class EntreeController : Controller
     {
-        List<Entree> myMenu = new List<Entree>();
-        void makeMenu(){
-            //construct the menu
-            var Hamburger = new Entree("Jake Burger", 5.99f, 673);
-            var Cheeseburger = new Entree("Mark Burger", 6.99f, 833);
-            var VeganBurger = new Entree("Vail Burger", 10.99f, 428);
-            myMenu.Add(Hamburger);
-            myMenu.Add(Cheeseburger);
-            myMenu.Add(VeganBurger);
-        }
+        // List<Entree> myMenu = new List<Entree>();
+        // void makeMenu(){
+        //     //construct the menu
+        //     var Hamburger = new Entree("Jake Burger", 5.99f, 673);
+        //     var Cheeseburger = new Entree("Mark Burger", 6.99f, 833);
+        //     var VeganBurger = new Entree("Vail Burger", 10.99f, 428);
+        //     myMenu.Add(Hamburger);
+        //     myMenu.Add(Cheeseburger);
+        //     myMenu.Add(VeganBurger);
+        // }
 
 
 
         [HttpGet]
-        public List<Entree> Get()
+        public void Get()
         {
-            makeMenu();
-            return myMenu;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Entree Get(int id)
+        public void Get(int id)
         {
-            makeMenu();
-            return myMenu[id];
         }
 
         // POST api/values

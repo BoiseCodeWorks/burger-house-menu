@@ -7,8 +7,8 @@ namespace MenuApi.SQLite
 
   public class BurgerHouseContext : DbContext
   {
-    // public DbSet<Drink> Drinks { get; set; }
-    // public DbSet<Entree> Entrees { get; set; }
+    public DbSet<Drink> Drinks { get; set; }
+    public DbSet<Entree> Entrees { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

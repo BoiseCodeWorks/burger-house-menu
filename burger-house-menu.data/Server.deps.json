@@ -1,0 +1,117 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "edcd2e9ecc52881275e035c939e182359a002d43"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "server/1.0.0": {
+        "dependencies": {
+          "Linqdb": "1.0.0",
+          "ServerLogic": "1.0.0",
+          "ServerSharedData": "1.0.0"
+        },
+        "runtime": {
+          "Server.dll": {}
+        }
+      },
+      "protobuf-net/2.1.0": {
+        "dependencies": {
+          "System.Runtime.Serialization.Primitives": "4.1.1",
+          "System.Xml.XmlSerializer": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.5/protobuf-net.dll": {}
+        }
+      },
+      "system.runtime.serialization.primitives/4.1.1": {
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
+      "system.xml.xmlserializer/4.0.11": {
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "leveldb.net/1.0.0": {
+        "runtime": {
+          "Leveldb.Net.dll": {}
+        }
+      },
+      "linqdb/1.0.0": {
+        "dependencies": {
+          "Leveldb.Net": "1.0.0",
+          "ServerSharedData": "1.0.0",
+          "protobuf-net": "2.1.0"
+        },
+        "runtime": {
+          "Linqdb.dll": {}
+        }
+      },
+      "serverlogic/1.0.0": {
+        "dependencies": {
+          "Linqdb": "1.0.0",
+          "ServerSharedData": "1.0.0"
+        },
+        "runtime": {
+          "ServerLogic.dll": {}
+        }
+      },
+      "servershareddata/1.0.0": {
+        "runtime": {
+          "ServerSharedData.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "protobuf-net/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8ijiRUzGcB9SYo2ohIujk5s93MeaXF+/xd9WBGCgS1SqQyOC5gUTnCKIXZPlf8a6UROkK70McJloL4P19IvghQ==",
+      "path": "protobuf-net/2.1.0",
+      "hashPath": "protobuf-net.2.1.0.nupkg.sha512"
+    },
+    "system.runtime.serialization.primitives/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-776KtACOhISXhED0ySlNWpGsijybkEmX07PdJcAwelueufnBO3HvMPW7DWvoF/9Lqs5PlpC7C/JYzW5eTqwriQ==",
+      "path": "system.runtime.serialization.primitives/4.1.1",
+      "hashPath": "system.runtime.serialization.primitives.4.1.1.nupkg.sha512"
+    },
+    "system.xml.xmlserializer/4.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FrazwwqfIXTfq23mfv4zH+BjqkSFNaNFBtjzu3I9NRmG8EELYyrv/fJnttCIwRMFRR/YKXF1hmsMmMEnl55HGw==",
+      "path": "system.xml.xmlserializer/4.0.11",
+      "hashPath": "system.xml.xmlserializer.4.0.11.nupkg.sha512"
+    },
+    "leveldb.net/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "linqdb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "serverlogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "servershareddata/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
